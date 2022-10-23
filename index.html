@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Whatsapp Chat Window</title>
+        <style>
+            .main-container{
+                height: 400px;
+                width: 300px;
+                border: 1.5px solid black;
+                display: block;
+                margin: auto;
+            }
+            .container{
+                background-color: rgb(49, 225, 49);
+            }
+            .container-one{
+                display: flex;
+                justify-content: space-between;
+                font-size: 20px;
+                padding: 10px;
+            }
+            .container-two{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 18px;
+            }
+            .container-three{
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 31px;
+                display:flex;
+                flex-direction:column;
+                align-items: flex-start;
+                background-color: aliceblue;
+            }
+            .container-day{
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 31px;
+                display:flex;
+                flex-direction:column;
+                align-items: flex-start;
+                background-color: aliceblue;
+            }
+            .container-night{
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 31px;
+                display:flex;
+                flex-direction:column;
+                align-items: flex-start;
+                background-color:black;
+                color: white;
+            }
+            .container-img{
+                display: flex;
+                margin-top: 20px;
+            }
+            .container-name{
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+        </style>
+        <script>
+            function changeBackgroundtoDay(){
+                  document.getElementById("change").className="container-day";     
+            }
+            function changeBackgroundtoNight(){
+                  document.getElementById("change").className="container-night";     
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main-container">
+        <div class="container">
+         <div class="container-one">
+           <div>Whatsapp</div>
+           <div>
+            <img src="./images/sunny-day.png" height="25px" width="25px" onclick="changeBackgroundtoDay()">&nbsp;&nbsp;&nbsp;
+            <img src="./images/night.png" height="25px" width="25px" onclick="changeBackgroundtoNight()">&nbsp;&nbsp;&nbsp;
+            <img src="./images/search (1).png" height="25px" width="25px">&nbsp;&nbsp;&nbsp;
+            <img src="./images/dots.png" height="25px" width="25px">
+           </div>
+         </div> 
+         <div class="container-two">
+            <img src="./images/camera.png" height="25px" width="25px">
+            <div>Chats</div>
+            <div>Status</div>
+            <div>Calls</div>
+         </div>
+        </div>
+        <div class="container-three" id="change">
+            <div class="container-img">
+               <div> <img src="./images/female user.png" height="35px" width="35px"></div>
+                <div class="container-name"><span>Sadavarte Shraddha</span></div>
+            </div>
+
+            <div class="container-img">
+                <div> <img src="./images/male user.png" height="35px" width="35px"></div>
+                 <div class="container-name"><span>Suraj Shende sir</span></div>
+             </div>
+
+             <div class="container-img">
+                <div> <img src="./images/female user.png" height="35px" width="35px"></div>
+                 <div class="container-name"><span>Vaibhavi Hole</span></div>
+             </div>
+
+             <div class="container-img">
+                <div> <img src="./images/male user.png" height="35px" width="35px"></div>
+                 <div class="container-name"><span>Anand Sir</span></div>
+             </div>
+
+             <div class="container-img">
+                <div> <img src="./images/female user.png" height="35px" width="35px"></div>
+                 <div class="container-name"><span>Mansi</span></div>
+             </div>
+        </div>
+        </div>
+    </body>
+</html>
