@@ -12,6 +12,18 @@
             .container{
                 background-color: rgb(49, 225, 49);
             }
+            .img{
+                height: 25px;
+                width: 25px;
+            }
+            .img:hover{
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .wp{
+                cursor: pointer;
+                transition: 0.5s;
+            }
             .container-one{
                 display: flex;
                 justify-content: space-between;
@@ -52,6 +64,11 @@
                 background-color:black;
                 color: white;
             }
+            .name:hover{
+                cursor: pointer;
+                transition: 0.5s;
+                text-decoration: underline;
+            }
             .container-img{
                 display: flex;
                 margin-top: 20px;
@@ -74,19 +91,19 @@
         <div class="main-container">
         <div class="container">
          <div class="container-one">
-           <div>Whatsapp</div>
+           <div class="wp">Whatsapp</div>
            <div>
-            <img src="./images/sunny-day.png" height="25px" width="25px" onclick="changeBackgroundtoDay()">&nbsp;&nbsp;&nbsp;
-            <img src="./images/night.png" height="25px" width="25px" onclick="changeBackgroundtoNight()">&nbsp;&nbsp;&nbsp;
-            <img src="./images/search (1).png" height="25px" width="25px">&nbsp;&nbsp;&nbsp;
-            <img src="./images/dots.png" height="25px" width="25px">
+            <img src="./images/sunny-day.png" class="img" onclick="changeBackgroundtoDay()">&nbsp;&nbsp;&nbsp;
+            <img src="./images/night.png" class="img" onclick="changeBackgroundtoNight()">&nbsp;&nbsp;&nbsp;
+            <img src="./images/search (1).png" class="img">&nbsp;&nbsp;&nbsp;
+            <img src="./images/dots.png" class="img">
            </div>
          </div> 
          <div class="container-two">
-            <img src="./images/camera.png" height="25px" width="25px">
-            <div>Chats</div>
-            <div>Status</div>
-            <div>Calls</div>
+            <img src="./images/camera.png" class="img">
+            <div class="name">Chats</div>
+            <div class="name">Status</div>
+            <div class="name">Calls</div>
          </div>
         </div>
         <div class="container-three" id="change">
